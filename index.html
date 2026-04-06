@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>San Francisco Crime Data Story</title>
+    <title>San Francisco Crime</title>
 
     <style>
         body {
@@ -74,7 +74,7 @@
 
 <header>
     <h1>San Francisco Crime Data Story</h1>
-    <p>Exploring patterns, trends, and spatial differences in urban crime</p>
+    <p>Prostitution in San Francisco - A Data Story</p>
 </header>
 
 <div class="container">
@@ -84,30 +84,46 @@
         <div class="card">
             <h2>About this project</h2>
             <p>
-                This data story explores crime patterns in San Francisco using
-                visual analytics. We examine how crime varies over time,
-                across districts, and by type.
+                This project explores crime patterns in San Francisco, with a focus on
+                prostitution-related incidents. Using data from 2003 to 2023, we analyze
+                when and where these crimes occur, uncovering temporal and spatial trends.
             </p>
         </div>
     </div>
 
-    <!-- TEMPORAL -->
+    <!-- INCIDENT TREND -->
     <div class="section">
-        <h2>When does crime happen?</h2>
+        <h2>The shift in prostitution incidents?</h2>
+
+    <!-- INCIDENT TREND -->
+    <div class="section">
+        <h2>The shift in prostitution incidents</h2>
 
         <div class="card">
             <p>
-                Crime patterns vary throughout the day. Explore how incidents
-                are distributed across hours using the interactive visualization.
+                Looking at the graph below, prostitution-related incidents remain relatively stable in the early years (2003–2006), followed by a sharp decline between 2007 and 2015. After 2015, incidents level off at a lower baseline with minor fluctuations.
             </p>
 
-            <a href="visualisations/crime_hourly_interactive.html" class="cta">
-                Explore hourly crime patterns →
-            </a>
+            <!-- SVG as an image -->
+            <img src="images/prostitution_trends.svg" alt="Prostitution incidents trend (2003–2025)">
+
+            <p style="font-size: 14px; color: #555; margin-top: 10px; line-height: 1.6;">
+                The decline aligns with policy changes, including discussions around <strong>Proposition K (2008)</strong> and recommendations from the <strong>Task Force on Prostitution</strong>. The reduction in recorded incidents reflects a shift in enforcement practices rather than a decrease in prostitution activity.
+            </p>
+
+            <h3>References</h3>
+            <ul>
+                <li><a href="https://www.cbsnews.com/news/sf-weighs-decriminalizing-prostitution/" target="_blank">CBS News: SF Weighs Decriminalizing Prostitution</a></li>
+                <li><a href="https://www.latimes.com/archives/la-xpm-2008-sep-15-me-sfsex15-story.html" target="_blank">LA Times: Heated Debates Around Proposition K (2008)</a></li>
+                <li><a href="https://sfelections.sfgov.org/sites/default/files/ftp/meetingarchive/ftp/uploadedfiles/elections/Meeting_Information/BSC/Enforcement%20Title%20and%20Summary__.pdf" target="_blank">San Francisco Elections: Proposition K Summary</a></li>
+            </ul>
+        </div>
+    </div>
+
         </div>
 
         <div class="card">
-            <h3>Yearly trends</h3>
+            <h3>During what hours of the day does prostitution occur most frequently?</h3>
             <p>
                 Crime levels have changed over time, reflecting broader social
                 and economic shifts.
