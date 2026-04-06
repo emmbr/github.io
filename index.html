@@ -73,7 +73,7 @@
 <body>
 
 <header>
-    <h1>San Francisco Crime Data Story</h1>
+    <h1>San Francisco Crime Data</h1>
     <p>Prostitution in San Francisco - A Data Story</p>
 </header>
 
@@ -97,16 +97,10 @@
 
         
         <div class="card">
-            <h3>During what hours of the day does prostitution occur most frequently?</h3>
-            <p>
-                Crime levels have changed over time, reflecting broader social
-                and economic shifts.
-            </p>
 
-            <img src="images/yearly_crime_trends.png" alt="Yearly crime trends">
-        </div>
+            <!-- SVG as an image -->
+            <img src="images/prostitution_trends.svg" alt="Prostitution incidents trend (2003–2025)">
 
-        <div class="card">
             <p>
                 Looking at the full timeline from 2003 to 2025, the graph shows that prostitution-related incidents remain relatively stable in the early years, followed by a sharp and sustained decline beginning around 2007 and continuing through roughly 2015. After this period, the trend appears to level off at a significantly lower level, with only minor fluctuations in recent years.
             </p>
@@ -123,12 +117,8 @@
                 Therefore, the graph should be interpreted as showing a <strong>policy-driven decline in recorded cases</strong>, rather than a true reduction in prostitution activity. The stabilization after 2015 further supports this interpretation, suggesting a “new normal” shaped by changed enforcement practices rather than continued behavioral shifts.
             </p>
 
-            <!-- SVG as an image -->
-            <img src="images/prostitution_trends.svg" alt="Prostitution incidents trend (2003–2025)">
 
-            <p style="font-size: 14px; color: #555; margin-top: 10px; line-height: 1.6;">
-                The decline aligns with policy changes, including discussions around <strong>Proposition K (2008)</strong> and recommendations from the <strong>Task Force on Prostitution</strong>. The reduction in recorded incidents reflects a shift in enforcement practices rather than a decrease in prostitution activity.
-            </p>
+
 
             <h3>References</h3>
             <ul>
@@ -143,38 +133,45 @@
 
     </div>
 
-    <!-- SPATIAL -->
     <div class="section">
         <h2>Where does crime concentrate?</h2>
 
         <div class="card">
             <p>
-                Crime is not evenly distributed across the city. Some districts
-                show higher concentrations for specific crime types.
+                Prostitution is not evenly distributed across San Francisco. Certain districts
+                show higher concentrations, reflecting the intersection of urban density, economic
+                vulnerability, and local policing patterns.
             </p>
 
-            <iframe 
-                src="visualisations/sf_prostitution_ratio_map.html" 
-                title="Prostitution Ratio Map" 
-                style="width: 50%; 
-                height: 300px;">
+            <!-- Full-width heatmap with wrapper for spacing -->
+            <div style="width: 100%; max-width: 1000px; height: 500px; margin: 20px auto;">
+                <iframe 
+                    src="visualisations/sf_prostitution_ratio_map.html" 
+                    title="Prostitution Ratio Map" 
+                    style="width: 100%; height: 100%; border: none;">
+                </iframe>
+            </div>
 
-            </iframe>
+            <p style="text-align: center; font-style: italic; margin-bottom: 20px;">
+                Figure: Relative prostitution intensity across districts (ratio to citywide average)
+            </p>
 
-            <p><em>Figure: Relative crime intensity across districts</em></p>
-        </div>
+            <p>
+                The heatmap highlights the <strong>Mission District</strong> as a clear outlier, showing a noticeably higher relative risk for prostitution-related offenses compared to other districts. This pattern is particularly pronounced during the years <strong>2000–2005</strong> and <strong>2010–2015</strong>. The concentration aligns with the neighborhood’s historical context: during the dot-com boom, gentrification and displacement altered the socio-economic fabric, leaving some long-term residents with limited economic opportunities. The Mission’s dense urban environment, combined with local policing patterns, appears to contribute to the spatial clustering of sex-work-related activity.
+            </p>
 
-        <p>The heatmap highlights the <strong>Mission District</strong> as a clear outlier, showing a noticeably higher relative risk for prostitution-related offenses compared to other districts. This concentration aligns with the neighborhood’s historical context: during the dot-com boom, gentrification and displacement altered the socio-economic fabric, leaving some long-term residents with limited economic opportunities. The Mission’s dense urban environment, combined with local policing patterns, appears to contribute to the spatial clustering of sex-work-related activity in this district.</p>
+            <p>
+                By quantifying these patterns, our analysis demonstrates how prostitution offenses are not evenly distributed across the city. Instead, they tend to concentrate in areas where social vulnerability intersects with urban density and economic pressures. Understanding these patterns is essential for designing targeted, evidence-based interventions that address the underlying socio-economic factors rather than relying solely on enforcement.
+            </p>
 
-        <p>By quantifying these patterns, our analysis demonstrates how prostitution offenses are not evenly distributed across the city. Instead, they tend to concentrate in areas where social vulnerability intersects with urban density and economic pressures. Understanding these patterns is essential for designing targeted, evidence-based interventions that address the underlying socio-economic factors rather than relying solely on enforcement.</p>
-
-        <div class="references">
-            <h3>References</h3>
-            <ul>
-                <li>CalMigration. <em>Mission District History.</em> Retrieved from <a href="https://www.calmigration.org/learn-chapter/mission-district" target="_blank">https://www.calmigration.org/learn-chapter/mission-district</a></li>
-                <li>Salon. <em>The Party’s Over: Gentrification in San Francisco.</em> April 25, 2000. Retrieved from <a href="https://www.salon.com/2000/04/25/party_5/" target="_blank">https://www.salon.com/2000/04/25/party_5/</a></li>
-                <li>SFGate. <em>San Francisco sex workers and Mission District trends.</em> 2023. Retrieved from <a href="https://www.sfgate.com/local/article/san-francisco-sex-workers-mission-17777619.php" target="_blank">https://www.sfgate.com/local/article/san-francisco-sex-workers-mission-17777619.php</a></li>
-            </ul>
+            <div class="references">
+                <h3>References</h3>
+                <ul>
+                    <li>CalMigration. <em>Mission District History.</em> Retrieved from <a href="https://www.calmigration.org/learn-chapter/mission-district" target="_blank">https://www.calmigration.org/learn-chapter/mission-district</a></li>
+                    <li>Salon. <em>The Party’s Over: Gentrification in San Francisco.</em> April 25, 2000. Retrieved from <a href="https://www.salon.com/2000/04/25/party_5/" target="_blank">https://www.salon.com/2000/04/25/party_5/</a></li>
+                    <li>SFGate. <em>San Francisco sex workers and Mission District trends.</em> 2023. Retrieved from <a href="https://www.sfgate.com/local/article/san-francisco-sex-workers-mission-17777619.php" target="_blank">https://www.sfgate.com/local/article/san-francisco-sex-workers-mission-17777619.php</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
